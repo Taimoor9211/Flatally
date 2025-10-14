@@ -128,7 +128,7 @@ const UserReviews = () => {
 
           {/* Custom Navigation Buttons */}
           <button
-            className="custom-prev absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white border border-gray-300 text-gray-700 hover:bg-gray-50 px-2 py-2 rounded-full shadow-md transition-all duration-200 hover:shadow-lg -ml-6 flex items-center justify-center"
+            className="custom-prev absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white border border-gray-300 text-gray-700 hover:bg-gray-50 px-[4px] py-[4px] rounded-full shadow-md transition-all duration-200 hover:shadow-lg -ml-4 flex items-center justify-center"
             type="button"
           >
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 16 16">
@@ -140,7 +140,7 @@ const UserReviews = () => {
           </button>
 
           <button
-            className="custom-next absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white border border-gray-300 text-gray-700 hover:bg-gray-50 px-2 py-2 rounded-full shadow-md transition-all duration-200 hover:shadow-lg -mr-6 flex items-center justify-center"
+            className="custom-next absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white border border-gray-300 text-gray-700 hover:bg-gray-50 px-[4px] py-[4px] rounded-full shadow-md transition-all duration-200 hover:shadow-lg -mr-4 flex items-center justify-center"
             type="button"
           >
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 16 16">
