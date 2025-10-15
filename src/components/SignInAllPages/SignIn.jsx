@@ -66,12 +66,12 @@ const SignIn = () => {
 
                   {/* Forgot Password */}
                   <div className="mb-6 text-center">
-                    <a 
+                    <Link 
                       className="text-amber-600 hover:text-amber-700 transition-colors text-sm"
                       href="/forget-password"
                     >
                       Forgot Password
-                    </a>
+                    </Link>
                   </div>
 
                   {/* Login Button */}
