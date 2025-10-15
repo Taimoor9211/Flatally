@@ -1,8 +1,22 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 
 const Footer = () => {
+  const location = useLocation();
+
+  // Agar current page signin hai to footer mat dikhao
+  if (location.pathname.toLowerCase() === '/signin') {
+    return null;
+  }
+  if (location.pathname.toLowerCase() === '/register') {
+    return null;
+  }
+  if (location.pathname.toLowerCase() === '/forget-password') {
+    return null;
+  }
+
   return (
-    <div className="darkMode text-light bg-Mix p-3 FooterBlock">
+    <div className="bg-gray-900 text-white p-3">
       <footer className="py-5">
         <div className="max-w-6xl mx-auto px-4">
           {/* Main Footer Content */}
@@ -133,7 +147,7 @@ const Footer = () => {
           {/* Bottom Section */}
           <div className="flex flex-col sm:flex-row justify-between items-center pt-8 mt-8 border-t border-gray-700">
             <p className="text-gray-300 text-sm mb-4 sm:mb-0">
-              © 2024 Company, Inc. All rights reserved.
+              © 2024 Flatally. All rights reserved.
             </p>
             <ul className="flex space-x-4">
               <li>
@@ -154,19 +168,6 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-
-      {/* Custom CSS for dark mode */}
-      <style jsx>{`
-        .darkMode {
-          background-color: rgb(26, 25, 25); /* --SecondaryColorV2 */
-        }
-        .bg-Mix {
-          background: linear-gradient(135deg, rgb(26, 25, 25) 0%, rgb(23, 23, 23) 100%);
-        }
-        .FooterBlock {
-          background-color: var(--SecondaryColorV2);
-        }
-      `}</style>
     </div>
   );
 };

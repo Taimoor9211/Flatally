@@ -178,9 +178,9 @@ const Register = () => {
                       I already have an Account{' '}
                       <a 
                         className="text-amber-600 hover:text-amber-700 transition-colors font-medium"
-                        href="/auth/login"
+                        href="/signin"
                       >
-                        Login
+                        Sign In
                       </a>
                     </p>
                   </div>
