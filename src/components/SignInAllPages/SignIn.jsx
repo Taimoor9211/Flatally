@@ -88,12 +88,12 @@ const SignIn = () => {
                   <div className="text-center">
                     <p className="text-gray-600 text-sm">
                       I don't have Account{' '}
-                      <a 
+                      <Link
                         className="text-amber-600 hover:text-amber-700 transition-colors font-medium"
                         href="/register"
                       >
                         Register
-                      </a>
+                      </Link>
                     </p>
                   </div>
                 </form>
