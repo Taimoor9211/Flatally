@@ -92,7 +92,7 @@ const UserReviews = () => {
                 spaceBetween: 30,
               },
             }}
-            className="py-4"
+            className="py-4 user-reviews-swiper"
           >
             {reviews.map((review) => (
               <SwiperSlide key={review.id}>
@@ -153,37 +153,41 @@ const UserReviews = () => {
         </div>
       </div>
 
-      {/* Global styles for Swiper */}
-      <style jsx global>{`
-        .swiper-pagination-bullet {
-          width: 12px;
-          height: 12px;
-          background: #d1d5db;
-          opacity: 1;
-        }
+      {/* Add CSS via style tag without jsx attribute */}
+      <style>
+        {`
+          .user-reviews-swiper .swiper-pagination-bullet {
+            width: 12px;
+            height: 12px;
+            background: #d1d5db;
+            opacity: 1;
+          }
 
-        .swiper-pagination-bullet-active {
-          background: #b58e53;
-        }
+          .user-reviews-swiper .swiper-pagination-bullet-active {
+            background: #b58e53;
+          }
 
-        .swiper {
-          padding: 20px 10px 40px;
-        }
+          .user-reviews-swiper {
+            padding: 20px 10px 40px;
+          }
 
-        .swiper-slide {
-          height: auto;
-        }
+          .user-reviews-swiper .swiper-slide {
+            height: auto;
+          }
 
-        .swiper-button-disabled {
-          opacity: 0.5;
-          cursor: not-allowed;
-        }
+          .custom-prev.swiper-button-disabled,
+          .custom-next.swiper-button-disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+          }
 
-        .swiper-button-disabled:hover {
-          background: white;
-          transform: none;
-        }
-      `}</style>
+          .custom-prev.swiper-button-disabled:hover,
+          .custom-next.swiper-button-disabled:hover {
+            background: white;
+            transform: none;
+          }
+        `}
+      </style>
     </div>
   );
 };

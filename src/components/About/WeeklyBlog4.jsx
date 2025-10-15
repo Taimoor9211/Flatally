@@ -11,10 +11,10 @@ const WeeklyBlog4 = () => {
             <div className="order-2 lg:order-1">
               <div className="flex flex-col justify-between h-full">
                 <div>
-                  <p className="text-yellow-600 m-0">Weekly Blog</p>
-                  <h3 className="text-2xl lg:text-3xl font-bold mt-2">The Ultimate Guide to Sharing Space</h3>
+                  <p className="text-yellow-600 m-0">Matching Made Easys</p>
+                  <h3 className="text-2xl lg:text-3xl font-bold mt-2">How Flatally Works</h3>
                   <p className="mt-4 text-justify text-gray-700 leading-relaxed">
-                    In today's digital age, finding a suitable roommate has never been easier. Whether you're a student, a young professional, or someone looking to share living expenses, online platforms have revolutionized the way we search for and connect with potential room partners. These platforms provide a streamlined, efficient way to find individuals whose living habits, preferences, and schedules align with yours, ensuring a harmonious living situation. From detailed profiles to virtual tours and video calls, the process is designed to give you peace of mind and confidence in your choice. In this guide, we'll explore the best practices for finding your ideal roommate online, tips for creating an attractive profile, and how to navigate the entire process seamlessly.
+                    Flatally employs a sophisticated algorithm to match users based on various factors including lifestyle preferences, personality traits, and living habits. Users create detailed profiles outlining their ideal roommate, and the platform's intelligent system suggests compatible matches. Once a connection is established, users can engage in direct communication, schedule viewings, and ultimately find their perfect roommate. The platform's focus on compatibility ensures a higher likelihood of successful roommate pairings, fostering long-lasting friendships and harmonious living environments.
                   </p>
                 </div>
               </div>
