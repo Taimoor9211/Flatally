@@ -1,4 +1,4 @@
-import React, {LinK} from 'react';
+import React from 'react';
 import ConnectedImg from '../../assets/ConnectedImg.svg';
 
 const SignIn = () => {
@@ -66,12 +66,12 @@ const SignIn = () => {
 
                   {/* Forgot Password */}
                   <div className="mb-6 text-center">
-                    <LinK 
+                    <a 
                       className="text-amber-600 hover:text-amber-700 transition-colors text-sm"
                       href="/forget-password"
                     >
                       Forgot Password
-                    </LinK>
+                    </a>
                   </div>
 
                   {/* Login Button */}
@@ -88,12 +88,12 @@ const SignIn = () => {
                   <div className="text-center">
                     <p className="text-gray-600 text-sm">
                       I don't have Account{' '}
-                      <LinK 
+                      <a 
                         className="text-amber-600 hover:text-amber-700 transition-colors font-medium"
                         href="/register"
                       >
                         Register
-                      </LinK>
+                      </a>
                     </p>
                   </div>
                 </form>

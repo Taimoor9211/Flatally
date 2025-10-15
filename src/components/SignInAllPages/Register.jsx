@@ -1,4 +1,4 @@
-import React, {LinK, useState } from 'react';
+import React, { useState } from 'react';
 import RemoteImg from '../../assets/RemoteImg.svg';
 
 const Register = () => {
@@ -176,12 +176,12 @@ const Register = () => {
                   <div className="mb-4 text-center">
                     <p className="text-gray-600 text-sm">
                       I already have an Account{' '}
-                      <LinK 
+                      <a 
                         className="text-amber-600 hover:text-amber-700 transition-colors font-medium"
                         href="/signin"
                       >
                         Sign In
-                      </LinK>
+                      </a>
                     </p>
                   </div>
 

@@ -35,19 +35,10 @@ const Navbar = () => {
     { href: "/contact", label: "Contact", icon: Phone }
   ];
 
-  // Agar current page signin hai to navbar mat dikhao - yeh condition hooks ke baad honi chahiye
-  if (location.pathname.toLowerCase() === '/signin') {
+ const hideNavbarPages = ['/signin', '/register', '/forget-password', '/otp'];
+  if (hideNavbarPages.includes(location.pathname)) {
     return null;
   }
-  if (location.pathname.toLowerCase() === '/register') {
-    return null;
-  }
-  if (location.pathname.toLowerCase() === '/forget-password') {
-    return null;
-  }
-  // if (location.pathname.toLowerCase() === '/register') {
-  //   return null;
-  // }
 
   return (
     <nav 

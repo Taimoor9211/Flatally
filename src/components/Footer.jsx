@@ -4,17 +4,10 @@ import { useLocation } from 'react-router-dom';
 const Footer = () => {
   const location = useLocation();
 
-  // Agar current page signin hai to footer mat dikhao
-  if (location.pathname.toLowerCase() === '/signin') {
+  const hideNavbarPages = ['/signin', '/register', '/forget-password', '/otp'];
+  if (hideNavbarPages.includes(location.pathname)) {
     return null;
   }
-  if (location.pathname.toLowerCase() === '/register') {
-    return null;
-  }
-  if (location.pathname.toLowerCase() === '/forget-password') {
-    return null;
-  }
-
   return (
     <div className="bg-gray-900 text-white p-3">
       <footer className="py-5">
