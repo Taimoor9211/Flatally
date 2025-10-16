@@ -69,7 +69,7 @@ const SignIn = () => {
                   <div className="mb-6 text-center">
                     <Link 
                       className="text-amber-600 hover:text-amber-700 transition-colors text-sm"
-                      href="/forget-password"
+                      to="/forget-password"
                     >
                       Forgot Password
                     </Link>
@@ -91,7 +91,7 @@ const SignIn = () => {
                       I don't have Account{' '}
                       <Link 
                         className="text-amber-600 hover:text-amber-700 transition-colors font-medium"
-                        href="/register"
+                        to="/register"
                       >
                         Register
                       </Link>

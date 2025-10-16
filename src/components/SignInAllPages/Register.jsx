@@ -179,7 +179,7 @@ const Register = () => {
                       I already have an Account{' '}
                       <Link 
                         className="text-amber-600 hover:text-amber-700 transition-colors font-medium"
-                        href="/signin"
+                        to="/signin"
                       >
                         Sign In
                       </Link>
